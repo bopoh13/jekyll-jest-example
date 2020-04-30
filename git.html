@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radiation pollution - Leaflet</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Lapscar">
+	<meta name="date" content="2018-04-10" scheme="YYYY-MM-DD">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+CONSOLE
+<script type="text/javascript">
+'use strict';
+
+	let reduceData = [];
+	
+	const url = 'https://api.github.com/users';
+	const fetchCount = async (username) => {
+		const response = await fetch(`${url}/${username}/repos`);
+		const json = await response.json();
+		return json; //json['value'];
+	}
+	
+	const users = [
+		'octocat',
+		'norvig'
+	];
+	const counts = users.map(async username => {
+		const count = await fetchCount(username);
+		return count;
+	});
+
+
+	Promise.all(counts).then((data) => {
+		data.forEach((x) => {
+			reduceData.push.apply(reduceData, x.filter(item => item.fork == false));
+		});
+	}).then(() => {
+		console.log(`then`); // Filter Array
+		console.log(reduceData); // Filter Array
+	}).catch ((error) => {
+		console.log('Error:', error);
+	});
+	console.log(`end`); // Filter Array
+	console.log(reduceData); // Filter Array
+
+</script>
+
+</body>
+</html>
