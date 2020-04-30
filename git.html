@@ -9,7 +9,9 @@
 
 </head>
 <body>
-CONSOLE
+CONSOLE: loading 'github_list.js'
+<script type="text/javascript" src="github_list.js"></script>
+
 <script type="text/javascript">
 'use strict';
 
@@ -22,10 +24,6 @@ CONSOLE
 		return json; //json['value'];
 	}
 	
-	const users = [
-		'octocat',
-		'norvig'
-	];
 	const counts = users.map(async username => {
 		const count = await fetchCount(username);
 		return count;
