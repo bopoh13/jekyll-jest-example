@@ -12,11 +12,12 @@ This is a companion [to this tutorial](https://blog.sentry.io/2017/10/16/keep-yo
 
 | Step | Problem solved |
 | --- | --- |
-| 1 | [Get set up](https://github.com/cameronmcefee/jekyll-jest-example/tree/master/1-getting-started) |
-| 2 | [Expose Jekyll data](https://github.com/cameronmcefee/jekyll-jest-example/tree/master/2-expose-jekyll-data) |
-| 3 | [Report which posts fail](https://github.com/cameronmcefee/jekyll-jest-example/tree/master/3-report-which-posts-fail) |
-| 4 | [Enforce a style guide](https://github.com/cameronmcefee/jekyll-jest-example/tree/master/4-enforce-a-style-guide) |
-| 5 | [Selectively test files](https://github.com/cameronmcefee/jekyll-jest-example/tree/master/5-selectively-test-files)               |
+| 1 | [Get set up](//github.com/bopoh13/jekyll-jest-example/tree/master/1-getting-started) |
+| 2 | [Expose Jekyll data](//github.com/bopoh13/jekyll-jest-example/tree/master/2-expose-jekyll-data) |
+| 3 | [Report which posts fail](//github.com/bopoh13/jekyll-jest-example/tree/master/3-report-which-posts-fail) |
+| 4 | [Enforce a style guide](//github.com/bopoh13/jekyll-jest-example/tree/master/4-enforce-a-style-guide) |
+| 5 | [Selectively test files](//github.com/bopoh13/jekyll-jest-example/tree/master/5-selectively-test-files) |
+| 6 | [Weather](//github.com/bopoh13/jekyll-jest-example/tree/master/6-wether) |
 
 ## Getting started
 
